@@ -15,8 +15,9 @@ Gem::Specification.new do |s|
   s.test_files   = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.require_path = 'lib'
   s.requirements << 'none'
+  spree_version = '>= 3.7.0', '< 5.0'
 
-  s.add_dependency('spree_core', '~> 3.2.0')
+  s.add_dependency('spree_core', '~> 4')
   s.add_dependency 'datashift'
   s.add_dependency 'datashift_spree'
 
